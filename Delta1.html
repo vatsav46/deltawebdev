@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:black
+        }
+        h1{
+            text-align: center;
+            font-family: fantasy;
+            font-size: 100px;
+            color:rgb(71, 218, 71)
+        }
+        #sub_head{
+            color:honeydew;
+            text-align: center;
+            font-size: 30px;
+        }
+        h2{
+            color:hotpink;
+        }
+        .nutrients{
+            color :honeydew;
+        }
+        #n{
+            color: honeydew;
+        }
+    </style>
+    <script>
+    function myFunction()
+    {
+        var x1 = document.getElementById("Carbohydrate").value;
+        var x2 = document.getElementById("Proteins").value;
+        var x3 = document.getElementById("Fats").value;
+        var x4 = document.getElementById("Vitamins").value;
+        var x5 = document.getElementById("Minerals").value;
+        var x6 = document.getElementById("Fibres").value;
+        var x7 = document.getElementById("Water").value;
+        var text=("");
+        if(x1<310){
+            alert("Carbohydrate Insufficient");
+            text="Carbohydrate Insufficient";
+            c.style.color = "red";
+        }
+        else if(x1>=310&&x1<=1000){   
+            text="Carbohydrate Sufficient";
+            c.style.color = 'green';
+        }
+        else{
+            alert("Carbohydrate Exceeded");
+            text="Carbohydrate Exceeded";
+            c.style.color = 'red';
+        }
+        document.getElementById("c").innerHTML = text;
+        if(x2<50){
+            alert("Protein Insufficient");
+            text="Protein Insufficient";
+            p.style.color = "red";
+        }
+        else if(x2>=50&&x2<=100){   
+            text="Protein Sufficient";
+            p.style.color = 'green';
+        }
+        else{
+            alert("Protein exceeded");
+            text="Protein Exceeded";
+            c.style.color = 'red';
+        }
+        document.getElementById("p").innerHTML = text;
+        if(x3<70){
+            alert("Fats Insufficient");
+            text="Fats Insufficient";
+            f.style.color = "red";
+        }
+        else if(x3>=70&&x3<100){   
+            text="Fats Sufficient";
+            f.style.color = 'green';
+        }
+        else{
+            alert("Fats Exceeded");
+            text="Fats Exceeded";
+            c.style.color = 'red';
+        }
+        document.getElementById("f").innerHTML = text;
+        if(x4<10){
+            alert("Vitamins Insufficient");
+            text="Vitamins Insufficient";
+            v.style.color = "red";
+        }
+        else{   
+            text="Vitamins Sufficient";
+            v.style.color = 'green';
+        }
+        document.getElementById("v").innerHTML = text;
+        if(x5<5){
+            alert("Minerals Insufficient");
+            text="Minerals Insufficient";
+            m.style.color = "red";
+        }
+        else{   
+            text="Minerals Sufficient";
+            m.style.color = 'green';
+        }
+        document.getElementById("m").innerHTML = text;
+        if(x6<30){
+            alert("Fibres Insufficient");
+            text="Fibres Insufficient";
+            fb.style.color = "red";
+        }
+        else{   
+            text="Fibres Sufficient";
+            fb.style.color = 'green';
+        }
+        document.getElementById("fb").innerHTML = text;
+        if(x7<2000){
+            alert("Water Insufficient");
+            text="Water Insufficient";
+            w.style.color = "red";
+        }
+        else{   
+            text="Water Sufficient";
+            w.style.color = 'green';
+        }
+        document.getElementById("w").innerHTML = text;
+    }
+    function myFunction1()
+    {
+        var x1 = document.getElementById("Carbohydrate1").value;
+        var x2 = document.getElementById("Proteins1").value;
+        var x3 = document.getElementById("Fats1").value;
+        var x4 = document.getElementById("Vitamins1").value;
+        var x5 = document.getElementById("Minerals1").value;
+        var x6 = document.getElementById("Fibres1").value;
+        var x7 = document.getElementById("Water1").value;
+        var text=("");
+        if(x1<310){
+            alert("Carbohydrate Insufficient");
+            text="Carbohydrate Insufficient";
+            c1.style.color = "red";
+        }
+        else if(x1>=310&&x1<=1000){   
+            text="Carbohydrate Sufficient";
+            c.style.color = 'green';
+        }
+        else{
+            alert("Carbohydrate Exceeded");
+            text="Carbohydrate Exceeded";
+            c.style.color = 'red';
+        }
+        document.getElementById("c1").innerHTML = text;
+        if(x2<50){
+            alert("Protein Insufficient");
+            text="Protein Insufficient";
+            p1.style.color = "red";
+        }
+        else if(x2>=50&&x2<=100){   
+            text="Protein Sufficient";
+            p.style.color = 'green';
+        }
+        else{
+            alert("Protein Exceeded");
+            text="Protein Exceeded";
+            c.style.color = 'red';
+        }
+        document.getElementById("p1").innerHTML = text;
+        if(x3<70){
+            alert("Fats Insufficient");
+            text="Fats Insufficient";
+            f1.style.color = "red";
+        }
+        else if(x3>=70&&x3<100){   
+            text="Fats Sufficient";
+            f.style.color = 'green';
+        }
+        else{
+            alert("Fats Exceeded");
+            text="Fats Exceeded";
+            c.style.color = 'red';
+        }
+        document.getElementById("f1").innerHTML = text;
+        if(x4<10){
+            alert("Vitamins Insufficient");
+            text="Vitamins Insufficient";
+            v1.style.color = "red";
+        }
+        else{   
+            text="Vitamins Sufficient";
+            v1.style.color = 'green';
+        }
+        document.getElementById("v1").innerHTML = text;
+        if(x5<5){
+            alert("Minerals Insufficient");
+            text="Minerals Insufficient";
+            m1.style.color = "red";
+        }
+        else{   
+            text="Minerals Sufficient";
+            m1.style.color = 'green';
+        }
+        document.getElementById("m1").innerHTML = text;
+        if(x6<30){
+            alert("Fibres Insufficient");
+            text="Fibres Insufficient";
+            fb1.style.color = "red";
+        }
+        else{   
+            text="Fibres Sufficient";
+            fb1.style.color = 'green';
+        }
+        document.getElementById("fb1").innerHTML = text;
+        if(x7<2000){
+            alert("Water Insufficient");
+            text="Water Insufficient";
+            w1.style.color = "red";
+        }
+        else{   
+            text="Water Sufficient";
+            w1.style.color = 'green';
+        }
+        document.getElementById("w1").innerHTML = text;
+    }
+    </script>
+</head>
+<body>
+    <h1>The Diet Stalker</h1>
+    <p id="sub_head">Probably the best diet-tracker in the world</p>
+    <h2>Sai</h2>
+    <p id = "n">Note: INput should be given in grams for all nutrients, and in Millilitres for water.</p>
+    <span class="nutrients">Carbohydrate</span><input type="number" id="Carbohydrate"><p id="c"></p><br>
+    <span class="nutrients">Proteins</span><input type="number" id="Proteins" ><p id="p"></p><br>
+    <span class="nutrients">Fats</span><input type="number" id="Fats" ><p id="f"></p><br>
+    <span class="nutrients">Vitamins</span><input type="number" id="Vitamins" ><p id="v"></p><br>
+    <span class="nutrients">Minerals</span><input type="number" id="Minerals" ><p id="m"></p><br>
+    <span class="nutrients">Fibres</span><input type="number" id="Fibres" ><p id="fb"></p><br>
+    <span class="nutrients">Water</span><input type="number" id="Water" ><p id="w"></p><br>
+    <button onclick="myFunction()">Submit</button>
+    <h2>Pai</h2>
+    <span class="nutrients">Carbohydrate</span><input type="number" id="Carbohydrate1"><p id="c1"></p><br>
+    <span class="nutrients">Proteins</span><input type="number" id="Proteins1" ><p id="p1"></p><br>
+    <span class="nutrients">Fats</span><input type="number" id="Fats1" ><p id="f1"></p><br>
+    <span class="nutrients">Vitamins</span><input type="number" id="Vitamins1" ><p id="v1"></p><br>
+    <span class="nutrients">Minerals</span><input type="number" id="Minerals1" ><p id="m1"></p><br>
+    <span class="nutrients">Fibres</span><input type="number" id="Fibres1" ><p id="fb1"></p><br>
+    <span class="nutrients">Water</span><input type="number" id="Water1" ><p id="w1"></p><br>
+    <button onclick="myFunction1()">Submit</button>
+    
+</body>
+</html>
