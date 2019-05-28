@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+         body{
+            background-color:black
+        }
+        h1{
+            text-align: center;
+            font-family: fantasy;
+            font-size: 100px;
+            color:rgb(71, 218, 71)
+        }
+        #sub_head{
+            color:honeydew;
+            text-align: center;
+            font-size: 30px;
+        }
+        h2{
+            color:hotpink;
+        }
+        .button{
+            padding: 10px 15px;
+            border-radius: 10px;
+        }
+        #e{
+            color:honeydew;
+        }
+        #f{
+            color: honeydew;
+        }
+        #e1{
+            color:honeydew;
+        }
+        #f1{
+            color: honeydew;
+        }
+        #l{
+            color:honeydew;
+        }
+        #g{
+            color:honeydew;
+        }
+        #g1{
+            color:honeydew;
+        }
+    </style>
+    <script>
+        var TEE,cal;
+        var c=0;
+        var p=0;
+        var f=0;
+        function TEE()
+        {
+            var height =prompt("Enter the height in metres");
+            var weight =prompt("Enter the weight in kgs");
+            var age =prompt("Enter the age in years");
+            var gender=prompt("Enter the gender(male/female)");
+            if(gender="male")
+            {
+                TEE= 864-(9.72*age)+(1.27*((14.2*weight)+(503*height)));
+            }
+            else if(gender="female")
+            {
+                TEE= 387-(7.31*age)+(1.27*((10.9*weight)+(660.7*height)));
+            }
+            document.getElementById("e").innerHTML = "Minimum calorie intake required = " + TEE;
+        }
+        function TEE1()
+        {
+            var height =prompt("Enter the height in metres");
+            var weight =prompt("Enter the weight in kgs");
+            var age =prompt("Enter the age in years");
+            var gender=prompt("Enter the gender(male/female)");
+            if(gender="male")
+            {
+                TEE= 864-(9.72*age)+(1.27*((14.2*weight)+(503*height)));
+            }
+            else if(gender="female")
+            {
+                TEE= 387-(7.31*age)+(1.27*((10.9*weight)+(660.7*height)));
+            }
+            document.getElementById("e1").innerHTML = "Minimum calorie intake required = " + TEE;
+        }
+        function func(){
+            var n=prompt("Enter the number of items");
+            var name = [];
+            var carbs = [];
+            var prots = [];
+            var fats = [];
+            var i;
+            for(i=0;i<n;i++)
+            {
+                name[i]=prompt("Enter the item no." + (i+1));
+                carbs[i]=prompt("Enter the amount of carbohydrates in "+name[i]+" in grams");
+                prots[i]=prompt("Enter the amount of proteins in "+name[i]+" in grams");
+                fats[i]=prompt("Enter the amount of fats in "+name[i]+" in grams");
+            }
+            for(i=0;i<n;i++)
+            {
+                carbs[i]=Number(carbs[i]);
+                prots[i]=Number(prots[i]);
+                fats[i]=Number(fats[i]);
+            }
+            for(i=0;i<n;i++)
+            {
+                c=c+carbs[i];
+                p=p+prots[i];
+                f=f+fats[i];
+            }
+            cal=(c*4)+(p*4)+(f*9);
+            document.getElementById("f").innerHTML = "Your intake is " + cal;
+        }
+        function func1(){
+            var n=prompt("Enter the number of items");
+            var name = [];
+            var carbs = Int32Array;
+            var prots = Int32Array;
+            var fats = Int32Array;
+            var i;
+            for(i=0;i<n;i++)
+            {
+                name[i]=prompt("Enter the item no." + (i+1));
+                carbs[i]=prompt("Enter the amount of carbohydrates in "+name[i]+" in grams");
+                prots[i]=prompt("Enter the amount of proteins in "+name[i]+" in grams");
+                fats[i]=prompt("Enter the amount of fats in "+name[i]+" in grams");
+            }
+            for(i=0;i<n;i++)
+            {
+                carbs[i]=Number(carbs[i]);
+                prots[i]=Number(prots[i]);
+                fats[i]=Number(fats[i]);
+            }
+            for(i=0;i<n;i++)
+            {
+                c=c+carbs[i];
+                p=p+prots[i];
+                f=f+fats[i];
+            }
+            cal=(c*4)+(p*4)+(f*9);
+            document.getElementById("f1").innerHTML = "Your intake is " + cal;
+        }
+        function compare(){
+            if(cal<TEE)
+            {
+                alert("Insufficient Calorie Intake");
+                text="Insufficient Calorie Intake";
+                g.style.color="red";
+            }
+            else
+            {
+                text="Sufficient Calorie Intake";
+                g.style.color="green";
+            }
+            document.getElementById("g"),innerHTML = text;
+            if(cal<TEE)
+            {
+                alert("Insufficient Calorie Intake");
+                text="Insufficient Calorie Intake";
+                g.style.color="red";
+            }
+            else
+            {
+                text="Sufficient Calorie Intake";
+                g.style.color="green";
+            }
+            document.getElementById("g"),innerHTML = text;
+            if(c<310)
+            {
+                alert("Insufficient Carbohydrate intake");
+            }
+            if(p<50)
+            {
+                alert("Insufficient Protein intake");
+            }
+            if(f<70)
+            {
+                alert("Insufficient Fats intake");
+            }
+        }
+        function compare1(){
+            if(cal<TEE)
+            {
+                alert("Insufficient Calorie Intake");
+                text="Insufficient Calorie Intake";
+                g1.style.color="red";
+            }
+            else
+            {
+                text="Sufficient Calorie Intake";
+                g1.style.color="green";
+            }
+            document.getElementById("g1"),innerHTML = text;
+            if(c<310)
+            {
+                alert("Insufficient Carbohydrate intake");
+            }
+            if(p<50)
+            {
+                alert("Insufficient Protein intake");
+            }
+            if(f<70)
+            {
+                alert("Insufficient Fats intake");
+            }
+           }
+       </script>
+</head>
+<body>
+    <h1>The Diet Stalker</h1>
+    <p id="sub_head">Probably the best diet-tracker in the world</p>
+    <h2>Instructions</h2>
+    <ul id="l">
+        <li>First input your details like height, weight, age etc. by using the first button.</li>
+        <li>Then, use the "Add Food" button to input your daily food.</li>
+        <li>Later, use the "Compare" button to get your information.</li>
+        <li>This specific calculator calculates your daily need of calories from your age, height and weight.</li>
+    </ul>
+    <h2>Sai</h2>
+    <button class="button" onclick=TEE()>Input/Change height and weight</button><br>
+    <p id="e"></p>
+    <button class="button" onclick=func()>Add Your Food Today</button>
+    <p id="f"></p>
+    <button class="button" onclick=compare()>Compare</button>
+    <p id="g"></p>
+    <h2>Pai</h2>
+    <button class="button" onclick=TEE1()>Input/Change height and weight</button><br>
+    <p id="e1"></p>
+    <button class="button" onclick=func1()>Add Your Food Today</button>
+    <p id="f1"></p>
+    <button class="button" onclick=compare1()>Compare</button>
+    <p id="g1"></p>
+</body>
+</html>
